@@ -1,0 +1,6 @@
+type Mutation {
+    #createAuthor(name:String!,email:String!): ID
+    #both above and below are same.
+    createAuthor(author:AuthorType) : ID
+    createPost(post:PostType) : ID
+}

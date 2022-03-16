@@ -1,4 +1,4 @@
-package com.social.graphqlsdl.resolver;
+package com.social.graphqlsdl.resolver.post;
 
 import com.coxautodev.graphql.tools.GraphQLResolver;
 import com.social.graphqlsdl.service.AuthorService;

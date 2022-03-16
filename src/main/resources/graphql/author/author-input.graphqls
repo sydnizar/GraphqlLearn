@@ -1,0 +1,5 @@
+input AuthorType {
+    name: String!
+    email: String!
+
+}

@@ -1,0 +1,9 @@
+input PostType {
+
+    title : String!
+    description : String!
+    category : String!
+    authorId: ID!
+
+
+}

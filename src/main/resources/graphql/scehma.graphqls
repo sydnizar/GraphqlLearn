@@ -8,45 +8,10 @@ type Query {
     authors: [Author]!
 }
 
-type Mutation {
-    #createAuthor(name:String!,email:String!): ID
-    #both above and below are same.
-    createAuthor(author:AuthorType) : ID
-    createPost(post:PostType) : ID
-}
-
-input PostType {
-
-    title : String!
-    description : String!
-    category : String!
-    authorId: ID!
 
 
-}
 
-input AuthorType {
-    name: String!
-    email: String!
 
-}
 
-type Message {
-    id: ID!
-    text: String!
-}
-type Author {
 
-    id: ID!
-    name: String!
-    email: String!
-    posts: [Post]!
-}
 
-type Post {
-    id : ID!
-    title : String!
-    description : String!
-    category : String!
-    author: Author!
-}

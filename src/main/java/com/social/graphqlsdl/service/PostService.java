@@ -10,4 +10,6 @@ public interface PostService {
     List<Post> getAllPostByAuthorId(UUID authorId);
 
     UUID createPost(Post post);
+
+    Integer getPostCount(UUID id);
 }

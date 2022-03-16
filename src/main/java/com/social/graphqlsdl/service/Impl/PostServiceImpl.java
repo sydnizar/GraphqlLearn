@@ -38,4 +38,9 @@ public class PostServiceImpl implements PostService {
         return postRepository.saveAndFlush(com.social.graphqlsdl.model.Post.builder()
                 .category(post.getCategory()).author(author.get()).description(post.getDescription()).title(post.getTitle()).build()).getId();
     }
+
+    @Override
+    public Integer getPostCount(UUID id) {
+        return postRepository.findAllByAuthor_Id(id).size();
+    }
 }
